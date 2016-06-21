@@ -17,7 +17,7 @@ int strcmp_(const char* src, const char* dest) {
     assert ((NULL != src) && (NULL != dest));
     while (*src == *dest) {
         if ('\0' == *src) {
-            break;
+            return 0;
         }
         src++;
         dest++;
